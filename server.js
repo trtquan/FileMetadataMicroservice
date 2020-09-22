@@ -18,7 +18,7 @@ app.get('/hello', function(req, res){
   res.json({greetings: "Hello, API"});
 });
 
-app.post('/api/fileanalyse', multer('upfile'), (req, res) => {
+app.post('/api/fileanalyse', multer().single('upfile'), (req, res) => {
   res({ name:req.file.originalname,
         type: req.file.type,
         size: req.file.size
