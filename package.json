@@ -13,6 +13,7 @@
 		"express": "^4.17.1",
 		"mongodb": "^3.5.9",
 		"mongoose": "^5.9.27",
+		"multer": "^1.4.2",
 		"shortid": "^2.2.15"
 	},
 	"engines": {
