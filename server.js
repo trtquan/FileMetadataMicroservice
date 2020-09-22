@@ -19,7 +19,7 @@ app.get('/hello', function(req, res){
 });
 
 app.post('/api/fileanalyse', multer().single('upfile'), (req, res) => {
-  res({ name:req.file.originalname,
+  res.json({ name:req.file.originalname,
         type: req.file.type,
         size: req.file.size
   })
